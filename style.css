@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #222;
+}
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: rgb(34,143,195);
+    background: linear-gradient(0deg, rgba(34,143,195,1) 37%, rgba(30,179,181,1) 78%);
+    margin: 100px auto 0;
+    padding: 40px 35px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    padding: 10px 25px;
+    background: #ebfffc;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img{
+    width: 16px;
+}
+
+.weather-icon{
+    width: 140px;
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: 15px;
+    border-bottom: 2px solid white;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin: 30px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    display: none;
+}
+
+@media (max-width: 550px) {
+    .card{
+        width: 80%;
+    }
+
+    .search{
+        margin-left: -21px;
+    }
+
+    .search input{
+        font-size: 12px;
+        height: 30px;
+    }
+    
+    .search button{
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+    }
+
+    .search button img{
+        height: 10px;
+        width: 20px;
+    }
+
+    .details{
+        margin-left: -18px;
+        gap: 15px;
+    }
+
+    .weather-icon{
+        width: 80px;
+    }
+
+    .weather h1{
+        font-size: 30px;
+    }
+
+    .weather h2{
+        font-size: 20px;
+    }
+
+    .col img{
+        width: 26px;
+    }
+
+    .humidity, .wind{ 
+        text-wrap: nowrap;
+        font-size: 14px;
+    }
+
+    .h2{
+        font-size: 14px;
+        text-wrap: nowrap;
+    }
+}
